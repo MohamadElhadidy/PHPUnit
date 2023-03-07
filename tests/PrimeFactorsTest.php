@@ -7,9 +7,9 @@ class PrimeFactorsTest extends TestCase
 {
   /**
    *  @test
-   * @dataProvider  factors
-   *  */
-  function it_generates_prime_factors_for_1($number, $expected)
+   *  @dataProvider  factors
+   **/
+  function it_generates_prime_factors_for_number($number, $expected)
   {
     $factors = new PrimeFactors;
 
@@ -26,7 +26,8 @@ class PrimeFactorsTest extends TestCase
       [5,[5]],
       [6,[2, 3]],
       [8,[2, 2, 2]],
-      [100,[2, 2, 5, 5]],
+      [10,[2, 5]],
+      [50,[2, 5, 5]],
       [999,[3, 3, 3, 37]],
     ];
   }
